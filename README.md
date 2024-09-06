@@ -4,7 +4,7 @@ It can compute single-digit integers; the output will also be a single-digit int
 
 ## How To Use
 1. Load PennSim up. This is the LC3 Simulator. You also have to have Java downloaded.
-2. Make sure all the files are in the same folder, including PennSim, Lc3os.obj, and calculator.asm
+2. Make sure all the files are in the same folder, including PennSim, Lc3os.obj, lc3os.sym, and calculator.asm
 3. Load the PennSim up and have a look where the command line is (pointed out in the picture) <img width="844" alt="Screenshot 2024-09-07 at 3 32 59 AM" src="https://github.com/user-attachments/assets/4894c449-b0a5-41ad-98bf-d992b9ec27a1">
 4. In the command line, run the following Commands
   1. load lc3os.obj
