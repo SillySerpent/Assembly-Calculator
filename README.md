@@ -16,7 +16,7 @@ It can compute single-digit integers, and the output will also be a single-digit
 1. Index 1 is addition " + "
 2. Index 2 is subtraction " - "
 3. Index 3 is multiplication " * "
-4. Index 4 is division " \"
+4. Index 4 is division " / "
 5. Index 5 is modulation " % "
 
 
