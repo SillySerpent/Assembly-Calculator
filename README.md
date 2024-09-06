@@ -5,7 +5,7 @@ It can compute single-digit integers, and the output will also be a single-digit
 ##How To Use
 1. Load PenSimm up. This is the LC3 Simulator. You also have to have Java downloaded.
 2. Make sure all the files are in the same folder, including PenSimm, Lc3os.obj, and calculator.asm
-3. Load the PenSimm up take a look where the command line is (pointed out in the picture) <img width="844" alt="Screenshot 2024-09-07 at 3 32 59 AM" src="https://github.com/user-attachments/assets/4894c449-b0a5-41ad-98bf-d992b9ec27a1">
+3. Load the PenSimm up and have a look where the command line is (pointed out in the picture) <img width="844" alt="Screenshot 2024-09-07 at 3 32 59 AM" src="https://github.com/user-attachments/assets/4894c449-b0a5-41ad-98bf-d992b9ec27a1">
 4. In the command line, run the following Commands
   1. load lc3os.obj
   2. as calculator.asm
