@@ -127,8 +127,7 @@ SELECT  AND R0, R0, #0
         ADD R0, R0, #-1
         BRz F_MOD
 
-        LD R0, P_OFF
-        PUTS 
+        BRnzp P_OUT
 
 ; Plus function (R1 + R3 → R4)
 F_PLUS  ADD R4, R1, R3  ; Already completed
@@ -190,11 +189,22 @@ MOD_JMP ADD R1, R1, R3
 ; Print result from R4 (load appropriate ASCII to R0 or print "OUT OF BOUNDS")
 P_RES   LD R0, ZERO
         ADD R0, R0, R4
-        OUT
+
+        ADD R4, R4, #-9
+        BRnz OUTPUT
+        BRnzp P_OFF
+
+OUTPUT  OUT
         BRnzp RESTART
+
 
         ; Print "OUT OF BOUNDS"
 P_OFF   LEA R0, OFF
+        PUTS
+        BRnzp RESTART
+
+        ;Prints operation index is out of bounds
+P_OUT   LEA R0, OPP
         PUTS
         BRnzp RESTART
 
@@ -218,4 +228,5 @@ TIMES   .FILL x2A   ; *
 DIV     .FILL x2F   ; /
 MOD     .FILL x25   ; %
 EQUAL   .FILL x3D   ; =
+OPP     .STRINGZ "Your operation index is OUT OF BOUNDS"
         .END
